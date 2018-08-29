@@ -23,7 +23,7 @@ def cop():
 
 def salvar(titulo, resumo, texto, autor, data):
     arquivo = open('pesquisa.csv', 'a')
-    arquivo.write('%s(+)%s(+)%s(+)%s(+)%s/n' %(titulo,resumo,texto,autor,data)) 
+    arquivo.write('%s,%s,%s,%s,%s/n' %(titulo,resumo,texto,autor,data)) 
     arquivo.flush()
     arquivo.close()
     
